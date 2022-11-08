@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+  --bid-shoulder: "Big Shoulders Display", cursive;
+  --lexend-deca: "Lexend Deca", sans-serif;
+  --font-size: 15px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size);
+  font-family: var(--lexend-deca);
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.container {
+  display: flex;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.card {
+  width: 210px;
+  padding: 3em;
+}
+
+.orange {
+  background-color: var(--Bright-orange);
+}
+
+.dark-cyan {
+  background-color: var(--Dark-cyan);
+}
+
+.very-dark-cyan {
+  background-color: var(--Very-dark-cyan);
+}
+
+.btn-orange {
+  color: var(--Bright-orange);
+}
+
+.btn-dark-cyan {
+  color: var(--Dark-cyan);
+}
+
+.btn-very-dark-cyan {
+  color: var(--Very-dark-cyan);
+}
+
+h1 {
+  font-family: var(--bid-shoulder);
+  text-transform: uppercase;
+  font-size: 2.7em;
+}
+
+p {
+  color: var(--Transparent-white-p);
+  line-height: 1.5;
+}
+
+button {
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  border: none;
+  width: 10em;
+  height: 3em;
+  border-radius: 2em;
+  font-weight: 700;
+  margin-top: 5em;
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: inherit;
+  border: 1px solid var(--Very-light-gray-background-headings-buttons);
+  color: var(--Very-light-gray-background-headings-buttons);
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  body {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 230px;
+    padding: 3em;
+  }
+
+  button {
+    margin-top: 1em;
+  }
+}
